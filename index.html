@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teller</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Min Visuelle Teller</h1>
+    <div id="container">
+        <div id="box">0</div>
+        <button id="btn" onclick="tellOpp()">+</button>
+        <button id="btn" onclick="tellNed()">-</button>
+        <button id="btn" onclick="tellNull()">Reset</button>
+    </div>
+    
+
+    <script>
+        let counter = 0;
+
+        function tellOpp(){
+            counter += 1;
+            document.getElementById('box').innerHTML= counter;
+        }
+
+        function tellNed(){
+            counter -= 1;
+            document.getElementById('box').innerHTML= counter;
+        }
+
+        function tellNull(){
+            counter = 0;
+            document.getElementById('box').innerHTML= counter;
+        }
+
+        //En annen måte å gjøre det samme:
+        /*let counter = 0;
+
+        document.getElementById('**ID til + knapp**').onclick=function(){
+            counter +=1;
+            document.getElementById('box').innerHTML= counter;
+        }
+        
+        document.getElementById('**ID til - knapp**').onclick=function(){
+            counter -=1;
+            document.getElementById('box').innerHTML= counter;
+        }
+        
+        document.getElementById('**ID til reset knapp**').onclick=function(){
+            counter =0;
+            document.getElementById('box').innerHTML= counter;
+        }*/
+    </script>
+</body>
+</html>
