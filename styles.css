@@ -1,0 +1,36 @@
+body{
+    margin: 0%;
+    padding:0%;
+    background-color: chocolate;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+#container{
+    border: solid black 5px;
+    height: 250px;
+    width: 500px;
+    display: block;
+    margin-left: 40%;
+}
+
+#box{
+    background-color: red;
+    text-align: center;
+    font-size: 50px;
+    border: solid black 2px;
+}
+
+#btn{
+    height: 50px;
+    width: 75px;
+    margin-left: 65px;
+    margin-top: 55px;
+    background-color: black;
+    color: red;
+    font-size: 15px;
+    border: solid red 5px;
+}
